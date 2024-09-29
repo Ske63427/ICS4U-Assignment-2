@@ -1,38 +1,82 @@
-html{
+html {
     height: 100%;
-    background-image: linear-gradient(to left top, #f3f4f7, #d9dff1, #91a0de, #91a0de);
-    border: 0px;
+    width: 100%;
     margin: 0px;
-}
-
-.logo {
+    padding: 0px;
+    background: radial-gradient(farthest-corner at 1500px 750px,
+        #f3f4f7, #d9dff1, #91a0de, #91a0de);
+  }
+  
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  .logo {
+    grid-area: 1 / 1 / 2 / 2;
+    /*background-color: red; */
+  }
+  
+  #logo {
+    margin-top: 4px;
+    margin-left: 4px;
     height: 75px;
     width: 75px;
-}
-
-header {
-    width: 100%;
-    height: 75px;
-}
-
-.accounts {
-    float: right;
-    margin-right: 10px;
-}
-
-.button{
+  }
+  
+  .search {
+    grid-area: 1 / 2 / 2 / 5;
+    /* background-color: orange; */
+  }
+  
+  .search>input {
+    margin-left: 10px;
+    margin-top: 19px;
+    width: 50%;
+    padding: 10px;
+    padding-right: 250px;
+    border-radius: 40px;
+    border: none;
+    font-size: 14px;
+    font-family: "Noto Sans Tamil Supplement";
+  }
+  
+  .accounts {
+    grid-area: 1 / 5 / 2 / 6;
+    /* background-color: yellow; */
+  }
+  
+  .accounts>a {
     width: 100px;
     margin-right: 15px;
     margin-left: 15px;
-    margin-top: 17px;   
+    margin-top: 17px;
     border-radius: 15px;
+    border: none;
     padding: 10px;
     background-color: #0f49f5;
     color: #f3f4f7;
     font-family: "Noto Sans Tamil Supplement";
     font-size: 20px;
-    border: none;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-}
+  }
+  
+  .div4 {
+    grid-area: 2 / 1 / 5 / 6;
+    background-color: green;
+  }
+  
+  .div5 {
+    grid-area: 5 / 1 / 6 / 6;
+    background-color: blue;
+  }
+  
+  .div6 {
+    grid-area: 6/1/6/6;
+    background-color: purple;
+  }
