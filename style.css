@@ -59,17 +59,17 @@ html {
 }
 
 .accounts > a {
-  width: 100px;
-  margin-right: 15px;
-  margin-left: 50px;
+  width: 25%;
+  margin-right: 3%;
+  margin-left: 10%;
   margin-top: 17px;
   border-radius: 15px;
   border: none;
-  padding: 10px;
+  padding: 12px;
   background-color: #0f49f5;
   color: #f3f4f7;
   font-family: "Noto Sans Tamil Supplement";
-  font-size: 20px;
+  font-size: 100%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -77,23 +77,27 @@ html {
 
 .hero {
   grid-area: 2 / 1 / 4 / 6;
-  background-image: url("heroImage.jpg");
+  /* background-image: url("heroImage.jpg");
   background-repeat: no-repeat;
-  background-size: 100vw  ;
+  background-size: 100vw; */
   width: 100%;
   height: 750px;
-  /* background-color: green; */
+  background-color: green;
+  opacity: 0.25;
+  
 }
 
 .plans {
   grid-area: 4 / 1 / 5 / 6;
-  /* background-color: blue; */
+  background-color: blue;
+  opacity: 0.25;
   height: 750px;
 }
 
-#subscription {
+/* #subscription {
   position: absolute;
-  top: 950px;
+  top: 120%;
+  vertical-align: middle;
   background-color: grey;
   padding: 12.61% 0%;
   width: 18.39%;
@@ -102,7 +106,7 @@ html {
   font-family: "Noto Sans Tamil Supplement";
   font-size: 20px;
   text-align: center;
-}
+} */
 
 .one {
   left: 11.25%;
