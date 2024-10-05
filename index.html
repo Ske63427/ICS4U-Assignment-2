@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Assignment 2 Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Noto Sans Tamil Supplement' rel='stylesheet'>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>replit</title>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+   <link href='https://fonts.googleapis.com/css?family=Noto Sans Tamil Supplement' rel='stylesheet'>
+   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="parent">
+   <div class="parent">
       <div class="logo">
-        <img id="logo" src="321 Movies Logo.png">
+         <img id="logo" src="321 Movies Logo.png">
       </div>
       <div class="search">
         <input type="text" placeholder="Search">
       </div>
-      <div class="accounts">
-        <a class="button" href="login.html">Login</a>
-        <a class="button">Register</a>
+      <div class="account">
+        <a class="button" id="login">Login</a>
+        <a class="button" id="register">Register</a>
       </div>
-      <div class="hero">Hero
-        <div class="movie-1"></div>
-        <div class="movie-2"></div>
-        <div class="movie-3"></div>
-        <div class="movie-4"></div>
-        <div class="movie-5"></div>
+      <div class="hero">
+         <div class="plan" id="plan-1">
+            <h3>Paid With Ads</h3>
+            <h4>$6.99/month</h4>
+            <p>2 Devices, 1080p HD, 5.1 Audio</p>
+         </div>
+         <div class="plan" id="plan-2">
+            <h3>Standard</h3>
+            <h4>$15.99/month</h4>
+            <p>3 Devices, 4K, 5.1 Audio</p>
+         </div>
+            
+         <div class="plan" id="plan-3">
+            <h3>Premium</h3>
+            <h4>$24.99/month</h4>
+            <p>3 Devices, 4K, Dolby Atmos</p>
+         </div>
+            
       </div>
-      <div class="plans">Plans
-        <!-- <a id="subscription" class="one">Paid with Ads: $7/Month</a> 2 Devices, 1080p HD, 5.1 Audio -->
-        <!--<a id="subscription" class="two">Standard: $16/Month</a>  3 Devices, 1080 HD, Dolby Atmos -->
-        <!--<a id="subscription" class="three">Premium: $20/Month</a>  4 Devices, 4k, Dolby Atmos -->
+      <div class="feature">
+         <div class="movie" id="movie-1">Movie 1</div>
+         <div class="movie" id="movie-2">Movie 2</div>
+         <div class="movie" id="movie-3">Movie 3</div>
       </div>
-      <div class="div6">Footer</div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+      <div class="footer">Footer</div>
+   </div>
+   <script src="script.js"></script>
+</body>
 </html>

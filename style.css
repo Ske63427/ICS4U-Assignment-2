@@ -1,69 +1,66 @@
 html {
   width: 100%;
   background: radial-gradient(
-    farthest-corner at 1500px 750px,
-    #f3f4f7,
-    #d9dff1,
-    #91a0de,
-    #91a0de
-  );
-  background-repeat: no-repeat;
+  farthest-corner at 1500px 750px,
+  #f3f4f7,
+  #d9dff1,
+  #91a0de,
+  #91a0de,
+  #91a0de
+);
+background-repeat: no-repeat;
 }
 
 * {
   margin: 0px;
-  padding: 0px;
   border: 0px;
+  padding: 0px;
 }
 
 .parent {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 75px repeat(3, 10%) repeat(2, 1fr);
+  grid-template-columns: 75px repeat(6, 1fr);
+  grid-template-rows: 75px repeat(7, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
 .logo {
   grid-area: 1 / 1 / 2 / 2;
-  /* background-color: red; */
 }
 
 #logo {
-  margin-top: 4px;
-  margin-left: 4px;
-  height: 75px;
   width: 75px;
+  height: 75px;
 }
 
 .search {
-  grid-area: 1 / 2 / 1 / 5;
-  /* background-color: orange; */
+  grid-area: 1 / 2 / 2 / 6;
 }
 
 .search > input {
-  margin-left: 10px;
-  margin-top: 19px;
+  margin-left: 8%;
+  margin-top: 18px;
+  margin-right: auto;
   width: 50%;
   padding: 10px;
   padding-right: 250px;
+  padding-bottom: 6px;
   border-radius: 40px;
   border: none;
   font-size: 14px;
   font-family: "Noto Sans Tamil Supplement";
 }
 
-.accounts {
-  grid-area: 1 / 5 / 1 / 6;
-  background-color: yellow;
+.account {
+  grid-area: 1 / 6 / 2 / 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.accounts > a {
-  width: 25%;
-  margin-right: 3%;
-  margin-left: 10%;
-  margin-top: 17px;
-  border-radius: 15px;
+.account > a {
+  margin: auto;
   border: none;
   padding: 12px;
   background-color: #0f49f5;
@@ -73,54 +70,98 @@ html {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  border-radius: 10px;
+} 
+
+#login {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 49px;
+  padding-right: 49px;
+}
+
+#register {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 41.875px;
+  padding-right: 41.875px;
 }
 
 .hero {
-  grid-area: 2 / 1 / 4 / 6;
-  /* background-image: url("heroImage.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vw; */
-  width: 100%;
-  height: 750px;
-  background-color: green;
-  opacity: 0.25;
-  
+  grid-area: 2 / 1 / 5 / 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("heroImage.jpg");
+  background-size:contain;
 }
 
-.plans {
-  grid-area: 4 / 1 / 5 / 6;
-  background-color: blue;
-  opacity: 0.25;
-  height: 750px;
-}
-
-/* #subscription {
-  position: absolute;
-  top: 120%;
-  vertical-align: middle;
-  background-color: grey;
-  padding: 12.61% 0%;
-  width: 18.39%;
-  border-radius: 20px;
-  color: white;
-  font-family: "Noto Sans Tamil Supplement";
-  font-size: 20px;
+.plan{
+  margin-top: 241px;
+  margin-bottom: 241px;
+  width: 250px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  border-radius: 5px;
   text-align: center;
-} */
-
-.one {
-  left: 11.25%;
+  background-color: gray;
 }
 
-.two {
-  left: 39.79%;
+div.hero > h3{
+  font-family: 'Commissioner', sans-serif;
 }
 
-.three {
-  left: 68.34%;
+.hero>h4{
+  font-family: 'Noto Sans Tamil Supplement', sans-serif;
 }
 
-.div6 {
-  grid-area: 5/1/6/6;
-  background-color: purple;
+#plan-1{
+  margin-right: 10%;
+  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+}
+
+#plan-2{
+  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+}
+
+#plan-3{
+  margin-left: 10%;
+  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+}
+
+.feature {
+  grid-area: 5 / 1 / 8 / 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: white; */
+}
+
+.movie {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+  padding-top: 178px;
+  padding-bottom: 178px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: gray;
+}
+
+#movie-1{
+  margin-right: 10%;
+  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+}
+
+#movie-2{
+  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+}
+
+#movie-3{
+  margin-left: 10%;
+  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+}
+
+.footer {
+  grid-area: 8 / 1 / 9 / 8;
 }
