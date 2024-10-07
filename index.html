@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width">
-   <title>replit</title>
+   <title>Bootleg Netflix</title>
    <link href="style.css" rel="stylesheet" type="text/css" />
    <link href='https://fonts.googleapis.com/css?family=Noto Sans Tamil Supplement' rel='stylesheet'>
    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
@@ -39,12 +39,26 @@
             <h4>$24.99/month</h4>
             <p>3 Devices, 4K, Dolby Atmos</p>
          </div>
-            
+         
       </div>
       <div class="feature">
-         <div class="movie" id="movie-1">Movie 1</div>
-         <div class="movie" id="movie-2">Movie 2</div>
-         <div class="movie" id="movie-3">Movie 3</div>
+        <div>
+            <div class="movie" id="movie-1"></div>
+                <img id="posterOne" class="poster" src="Movies/fightClub.jpg">
+            </div>
+            <div class="movie" id="movie-2">
+                <img id="posterTwo"class="poster" src="Movies/theMatrix.jpg">
+            </div>
+            <div class="movie" id="movie-3">
+                <img id="posterThree" class="poster" src="Movies/pulpFiction.jpg">
+            </div>
+        </div>
+        
+         <div class="slider">
+            <span>1</span>
+            <input type="range" value="0" min="0" max="10" step="1">
+            <span>10</span>
+        </div>
       </div>
       <div class="footer">Footer</div>
    </div>
