@@ -64,7 +64,7 @@ html {
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
-} 
+}
 
 #login {
   margin-left: auto;
@@ -86,11 +86,11 @@ html {
   justify-content: center;
   align-items: center;
   background-image: url("heroImage.jpg");
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.plan{
+.plan {
   margin-top: 241px;
   margin-bottom: 241px;
   width: 250px;
@@ -101,26 +101,26 @@ html {
   background-color: gray;
 }
 
-div.hero > h3{
-  font-family: 'Commissioner', sans-serif;
+div.hero > h3 {
+  font-family: "Commissioner", sans-serif;
 }
 
-.hero>h4{
-  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+.hero > h4 {
+  font-family: "Noto Sans Tamil Supplement", sans-serif;
 }
 
-#plan-1{
+#plan-1 {
   margin-right: 10%;
-  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+  font-family: "Noto Sans Tamil Supplement", sans-serif;
 }
 
-#plan-2{
-  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+#plan-2 {
+  font-family: "Noto Sans Tamil Supplement", sans-serif;
 }
 
-#plan-3{
+#plan-3 {
   margin-left: 10%;
-  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+  font-family: "Noto Sans Tamil Supplement", sans-serif;
 }
 
 .feature {
@@ -141,27 +141,43 @@ div.hero > h3{
   background-color: gray;
 }
 
-.poster{
+.poster {
   height: 376px;
   width: 250px;
   border-radius: 5px;
 }
 
-#movie-1{
+.movies {
+  display: flex;
+  justify-content: center;
+}
+
+#movie-1 {
   margin-right: 10%;
-  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+  font-family: "Noto Sans Tamil Supplement", sans-serif;
 }
 
-#movie-2{
-  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+#movie-2 {
+  font-family: "Noto Sans Tamil Supplement", sans-serif;
 }
 
-#movie-3{
+#movie-3 {
   margin-left: 10%;
-  font-family: 'Noto Sans Tamil Supplement', sans-serif;
+  font-family: "Noto Sans Tamil Supplement", sans-serif;
+}
+
+.slider {
+  position: absolute;
+  top: 195%;
+  display: flex;
+  justify-content: center;
+}
+
+#slider{
+  width: 750px;
 }
 
 .footer {
   grid-area: 8 / 1 / 9 / 8;
-  background-color: black;
+  background-color: purple;
 }
