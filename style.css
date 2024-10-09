@@ -166,15 +166,11 @@ div.hero > h3 {
   font-family: "Noto Sans Tamil Supplement", sans-serif;
 }
 
-.slider {
-  position: absolute;
-  /* bottom: 50%; */
-  display: flex;
-  justify-content: center;
-}
-
-#slider{
-  width: 750px;
+#leftButton,
+#rightButton{
+  font-size: medium;
+  width: 20px;
+  background-color: white;
 }
 
 .footer {
