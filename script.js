@@ -25,16 +25,26 @@ const posterSet5 = [
 ];
 const posterSets = [posterSet1, posterSet2, posterSet3, posterSet4, posterSet5];
 
-const poster1 = document.getElementById("movie-1");
-const poster2 = document.getElementById("movie-2");
-const poster3 = document.getElementById("movie-3");
+const poster1 = document.getElementById("posterOne");
+const poster2 = document.getElementById("posterTwo");
+const poster3 = document.getElementById("posterThree");
 
-let activeSet = posterSets[0];
+// const set = document.getElementById("poster");
+const slide = document.getElementById("slider");
 
-const set = document.getElementById("poster");
-const slider = document.getElementById("slider");
+const leftButton = document.getElementById("leftButton");
+const rightButton = document.getElementById("rightButton");
 
-slider.addEventListener("input", () => {
-      activeSet = posterSets[1];
-});
-console.log(slider.value);
+let x = 0;
+let activeSet = posterSets[x];
+
+rightButton.addEventListener("click", ()=>{
+  if (x<=4){
+    x++;
+    poster1.src = activeSet[0];
+    poster2.src = activeSet[1];
+    poster3.src = activeSet[2];
+  }
+  console.log("you touched me!");
+})
+

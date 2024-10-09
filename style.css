@@ -168,7 +168,7 @@ div.hero > h3 {
 
 .slider {
   position: absolute;
-  top: 195%;
+  /* bottom: 50%; */
   display: flex;
   justify-content: center;
 }
