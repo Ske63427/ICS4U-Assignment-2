@@ -1,85 +1,34 @@
-const posterSet1 = [
-  "Movies/fightClub.jpg",
-  "Movies/theMatrix.jpg",
-  "Movies/pulpFiction.jpg",
-];
-const posterSet2 = [
-  "Movies/forrestGump.jpg",
-  "Movies/theKarateKid.jpg",
-  "Movies/interstellar.jpg",
-];
-const posterSet3 = [
-  "Movies/furious7.jpg",
-  "Movies/theGodfather.jpg",
-  "Movies/shawshankRedemption.jpg",
-];
-const posterSet4 = [
-  "Movies/goodfellas.jpg",
-  "Movies/theDarkKnightRises.jpg",
-  "Movies/harryPotterAndTheSorcerersStone.jpg",
-];
-const posterSet5 = [
-  "Movies/inception.jpg",
-  "Movies/starWarsEpisode4.jpg",
-  "Movies/lordOfTheRings.jpg",
-];
-const posterSets = [
-    posterSet1, 
-    posterSet2, 
-    posterSet3, 
-    posterSet4, 
-    posterSet5
-];
+const POSTER_SET_ONE = ["Movies/fightClub.jpg","Movies/theMatrix.jpg","Movies/pulpFiction.jpg"];
+const POSTER_SET_TWO = ["Movies/forrestGump.jpg","Movies/theKarateKid.jpg","Movies/interstellar.jpg"];
+const POSTER_SET_THREE = ["Movies/furious7.jpg","Movies/theGodfather.jpg","Movies/shawshankRedemption.jpg"];
+const POSTER_SET_FOUR = ["Movies/goodfellas.jpg","Movies/theDarkKnightRises.jpg","Movies/harryPotterAndTheSorcerersStone.jpg"];
+const POSTER_SET_FIVE = ["Movies/inception.jpg","Movies/starWarsEpisode4.jpg","Movies/lordOfTheRings.jpg"];
+const ALL_POSTER_SETS = [POSTER_SET_ONE, POSTER_SET_TWO, POSTER_SET_THREE, POSTER_SET_FOUR, POSTER_SET_FIVE];
 
-const poster1 = document.getElementById("posterOne");
-const poster2 = document.getElementById("posterTwo");
-const poster3 = document.getElementById("posterThree");
+const POSTER_SLOT_ONE = document.getElementById("posterOne");
+const POSTER_SLOT_TWO = document.getElementById("posterTwo");
+const POSTER_SLOT_THREE = document.getElementById("posterThree");
+const ALL_POSTER_SLOTS = [POSTER_SLOT_ONE, POSTER_SLOT_TWO, POSTER_SLOT_THREE]
 
-const posters = [poster1, poster2, poster3]
+const LEFT_BUTTON = document.getElementById("LEFT_BUTTON");
+const RIGHT_BUTTON = document.getElementById("RIGHT_BUTTON");
 
-const slide = document.getElementById("slider");
+let chosenSet = 0;
+let activeSet = ALL_POSTER_SETS[chosenSet];
 
-const leftButton = document.getElementById("leftButton");
-const rightButton = document.getElementById("rightButton");
-
-let x = 0;
-
-let activeSet = posterSets[x];
-
-rightButton.addEventListener("click", ()=>{
-    // x = x < 4 ? x++ : x = 0; //doesnt work for some reason???
-    if (x < 4){
-      x++
-    } else {
-      x = 0
+RIGHT_BUTTON.addEventListener("click", () => {
+    chosenSet = (chosenSet < 4 ? ++chosenSet : chosenSet = 0);
+    activeSet = ALL_POSTER_SETS[chosenSet];
+    for (i = 0; i < ALL_POSTER_SLOTS.length; i++){
+        ALL_POSTER_SLOTS[i].src = activeSet[i];
     }
-    activeSet = posterSets[x];
-
-    // for (i = 0; i < posters.length; i++){ //also doesn't work :(
-    //     posters[i] = activeSet[i]
-    //     console.log("posters["+i+"] = " + posters[i])
-    //     console.log("activeSet["+i+"] = " + activeSet[i])
-    //     console.log("-----------------------------")
-    // }
-    poster1.src = activeSet[0];
-    poster2.src = activeSet[1];
-    poster3.src = activeSet[2];
-    console.log("you touched me(right)!");
-    console.log(x);
 })
 
-leftButton.addEventListener("click", ()=>{
-    // x = (x > 0) ? x-- : x = 4;
-    if (x > 0){
-      x--
-    } else {
-      x = 4
+LEFT_BUTTON.addEventListener("click", () => {
+    chosenSet = (chosenSet > 0 ? --chosenSet : chosenSet = 4);
+    activeSet = ALL_POSTER_SETS[chosenSet];
+    for (i = 0; i < ALL_POSTER_SLOTS.length; i++){
+        ALL_POSTER_SLOTS[i].src = activeSet[i];
     }
-    activeSet = posterSets[x];
-    poster1.src = activeSet[0];
-    poster2.src = activeSet[1];
-    poster3.src = activeSet[2];
-    console.log("you touched me(left)!");
-    console.log(x);
 })
 
