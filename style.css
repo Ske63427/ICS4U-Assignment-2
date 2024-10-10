@@ -1,7 +1,6 @@
 html {
   width: 100%;
-  background-color: #08090c;
-  background-repeat: no-repeat;
+  background-color: #060c1f;
 }
 
 * {
@@ -56,8 +55,8 @@ html {
   margin: auto;
   border: none;
   padding: 12px;
-  background-color: #0f49f5;
-  color: #f3f4f7;
+  background-color: #0a43f0;
+  color: #e4e9fa;
   font-family: "Noto Sans Tamil Supplement";
   font-size: 100%;
   text-align: center;
@@ -86,6 +85,7 @@ html {
   justify-content: center;
   align-items: center;
   background-image: url("heroImage.jpg");
+  opacity: 0.5;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -98,7 +98,7 @@ html {
   padding-bottom: 160px;
   border-radius: 5px;
   text-align: center;
-  background-color: gray;
+  background-color: #883bef;
 }
 
 div.hero > h3 {
@@ -154,6 +154,7 @@ div.hero > h3 {
 
 #movie-1 {
   margin-right: 10%;
+  margin-left: 10px;
   font-family: "Noto Sans Tamil Supplement", sans-serif;
 }
 
@@ -163,17 +164,19 @@ div.hero > h3 {
 
 #movie-3 {
   margin-left: 10%;
+  margin-right: 10px;
   font-family: "Noto Sans Tamil Supplement", sans-serif;
 }
 
-#leftButton,
-#rightButton{
-  font-size: medium;
-  width: 20px;
-  background-color: white;
+#LEFT_BUTTON,
+#RIGHT_BUTTON{
+  font-size: 50px;
+  width: 50px;
+  background-color: #163290;
+  border-radius: 10px;
 }
 
 .footer {
   grid-area: 8 / 1 / 9 / 8;
-  background-color: purple;
+  background-color: #163290;
 }

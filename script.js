@@ -16,19 +16,19 @@ const RIGHT_BUTTON = document.getElementById("RIGHT_BUTTON");
 let chosenSet = 0;
 let activeSet = ALL_POSTER_SETS[chosenSet];
 
-RIGHT_BUTTON.addEventListener("click", () => {
-    chosenSet = (chosenSet < 4 ? ++chosenSet : chosenSet = 0);
-    activeSet = ALL_POSTER_SETS[chosenSet];
+function changePosters(set){
+    activeSet = ALL_POSTER_SETS[set];
     for (i = 0; i < ALL_POSTER_SLOTS.length; i++){
         ALL_POSTER_SLOTS[i].src = activeSet[i];
     }
+}
+
+RIGHT_BUTTON.addEventListener("click", () => {
+    chosenSet = (chosenSet < 4 ? ++chosenSet : chosenSet = 0);
+    changePosters(chosenSet);
 })
 
 LEFT_BUTTON.addEventListener("click", () => {
     chosenSet = (chosenSet > 0 ? --chosenSet : chosenSet = 4);
-    activeSet = ALL_POSTER_SETS[chosenSet];
-    for (i = 0; i < ALL_POSTER_SLOTS.length; i++){
-        ALL_POSTER_SLOTS[i].src = activeSet[i];
-    }
+    changePosters(chosenSet);
 })
-
