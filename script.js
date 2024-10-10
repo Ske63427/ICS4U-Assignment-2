@@ -1,8 +1,8 @@
-const POSTER_SET_ONE = ["Movies/fightClub.jpg","Movies/theMatrix.jpg","Movies/pulpFiction.jpg"];
-const POSTER_SET_TWO = ["Movies/forrestGump.jpg","Movies/theKarateKid.jpg","Movies/interstellar.jpg"];
-const POSTER_SET_THREE = ["Movies/furious7.jpg","Movies/theGodfather.jpg","Movies/shawshankRedemption.jpg"];
-const POSTER_SET_FOUR = ["Movies/goodfellas.jpg","Movies/theDarkKnightRises.jpg","Movies/harryPotterAndTheSorcerersStone.jpg"];
-const POSTER_SET_FIVE = ["Movies/inception.jpg","Movies/starWarsEpisode4.jpg","Movies/lordOfTheRings.jpg"];
+const POSTER_SET_ONE = ["Movies/theGodfather.jpg","Movies/pulpFiction.jpg","Movies/goodfellas.jpg"];
+const POSTER_SET_TWO = ["Movies/forrestGump.jpg","Movies/furious7.jpg","Movies/interstellar.jpg"];
+const POSTER_SET_THREE = ["Movies/theKarateKid.jpg","Movies/theDarkKnightRises.jpg","Movies/shawshankRedemption.jpg"];
+const POSTER_SET_FOUR = ["Movies/lordOfTheRings.jpg","Movies/starWarsEpisode4.jpg","Movies/harryPotterAndTheSorcerersStone.jpg"];
+const POSTER_SET_FIVE = ["Movies/fightClub.jpg","Movies/theMatrix.jpg","Movies/inception.jpg"];
 const ALL_POSTER_SETS = [POSTER_SET_ONE, POSTER_SET_TWO, POSTER_SET_THREE, POSTER_SET_FOUR, POSTER_SET_FIVE];
 
 const POSTER_SLOT_ONE = document.getElementById("posterOne");

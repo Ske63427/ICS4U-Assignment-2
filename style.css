@@ -31,10 +31,10 @@ html {
 }
 
 .search > input {
+  width: 50%;
   margin-left: 8%;
   margin-top: 18px;
   margin-right: auto;
-  width: 50%;
   padding: 10px;
   padding-right: 250px;
   padding-bottom: 6px;
@@ -84,7 +84,7 @@ html {
   justify-content: center;
   align-items: center;
   background-image: url("heroImage.jpg");
-  opacity: 0.5;
+  opacity: 0.65;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -153,17 +153,17 @@ div.hero > h3 {
 #movie-1 {
   margin-right: 10%;
   margin-left: 10px;
-  font-family: "Noto Sans Tamil Supplement", sans-serif;
+  font-family: "Noto Sans Tamil Supplement";
 }
 
 #movie-2 {
-  font-family: "Noto Sans Tamil Supplement", sans-serif;
+  font-family: "Noto Sans Tamil Supplement";
 }
 
 #movie-3 {
   margin-left: 10%;
   margin-right: 10px;
-  font-family: "Noto Sans Tamil Supplement", sans-serif;
+  font-family: "Noto Sans Tamil Supplement";
 }
 
 #LEFT_BUTTON,
@@ -177,5 +177,27 @@ div.hero > h3 {
 .footer {
   grid-area: 8 / 1 / 9 / 8;
   background-color: #163290;
+  color: #e4e9fa;
+  font-family: "Commissioner";
   display: flex;
 }
+
+.contact > u,
+.about > u,
+.other > u{
+  font-weight: bold;
+}
+
+.contact,
+.about,
+.other{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 18%;
+}
+
+.about > a{
+  text-decoration: none;
+  color: #e4e9fa;
+}
+
