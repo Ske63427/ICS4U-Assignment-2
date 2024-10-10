@@ -39,7 +39,6 @@ html {
   padding-right: 250px;
   padding-bottom: 6px;
   border-radius: 40px;
-  /* border: none; */
   font-size: 14px;
   font-family: "Noto Sans Tamil Supplement";
 }
@@ -128,7 +127,6 @@ div.hero > h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: white; */
 }
 
 .movie {
@@ -179,4 +177,5 @@ div.hero > h3 {
 .footer {
   grid-area: 8 / 1 / 9 / 8;
   background-color: #163290;
+  display: flex;
 }
