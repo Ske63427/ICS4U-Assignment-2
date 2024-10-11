@@ -95,9 +95,19 @@ html {
   width: 250px;
   padding-top: 160px;
   padding-bottom: 160px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
-  background-color: #883bef;
+  background-color: #163290;
+}
+
+.plan > a{
+    background-color: #883bef;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
 }
 
 div.hero > h3 {
@@ -105,21 +115,21 @@ div.hero > h3 {
 }
 
 .hero > h4 {
-  font-family: "Noto Sans Tamil Supplement", sans-serif;
+  font-family: "Noto Sans Tamil Supplement";
 }
 
 #plan-1 {
   margin-right: 10%;
-  font-family: "Noto Sans Tamil Supplement", sans-serif;
+  font-family: "Noto Sans Tamil Supplement";
 }
 
 #plan-2 {
-  font-family: "Noto Sans Tamil Supplement", sans-serif;
+  font-family: "Noto Sans Tamil Supplement";
 }
 
 #plan-3 {
   margin-left: 10%;
-  font-family: "Noto Sans Tamil Supplement", sans-serif;
+  font-family: "Noto Sans Tamil Supplement";
 }
 
 .feature {
