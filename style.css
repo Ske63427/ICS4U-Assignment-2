@@ -98,6 +98,7 @@ html {
   border-radius: 10px;
   text-align: center;
   background-color: #163290;
+  color: white;
 }
 
 .plan > a{
@@ -211,3 +212,13 @@ div.hero > h3 {
   color: #e4e9fa;
 }
 
+/*----------------------------------------------------------------------login.html----------------------------------------------------------------------*/
+
+.userInfo {
+    background-color: #0a43f0;
+    border-radius: 10px;
+    width: 300px;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    margin: auto;
+}
