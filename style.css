@@ -84,7 +84,7 @@ html {
   justify-content: center;
   align-items: center;
   background-image: url("heroImage.jpg");
-  opacity: 0.65;
+  /* opacity: 0.65; */
   background-size: cover;
   background-repeat: no-repeat;
 }
