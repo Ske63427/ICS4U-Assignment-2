@@ -1,0 +1,56 @@
+.userInfo {
+    background-color: #0a43f0;
+    border-radius: 10px;
+    width: 300px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#Username,
+#Password{
+  font-size: large;
+  font-family: "Noto Sans Tamil Supplement";
+  border-radius: 5px;
+  margin-left: 45px;
+  padding: 5px;
+  width: 200px;
+} 
+
+.Button{
+  margin-left: 110px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #883bef;
+  color: #e4e9fa;
+  font-size: 18px;
+}
+
+.Return {
+  color: #e4e9fa;
+  font-family: "Noto Sans Tamil Supplement";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+}
+
+.signUpPrompt{
+  margin-left: 70px;
+  margin-top: 10px;
+  font-family: "Noto Sans Tamil Supplement";
+  color: #e4e9fa;
+}
+
+.signUpButton {
+    text-decoration: none;
+    color: #e4e9fa;
+}
+
+h3{
+  font-family: "Noto Sans Tamil Supplement";
+  margin-left: 115px;
+}

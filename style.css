@@ -211,14 +211,3 @@ div.hero > h3 {
   text-decoration: none;
   color: #e4e9fa;
 }
-
-/*----------------------------------------------------------------------login.html----------------------------------------------------------------------*/
-
-.userInfo {
-    background-color: #0a43f0;
-    border-radius: 10px;
-    width: 300px;
-    padding-top: 180px;
-    padding-bottom: 180px;
-    margin: auto;
-}
